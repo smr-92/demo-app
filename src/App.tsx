@@ -9,14 +9,14 @@ const App: React.FC = () => {
 
   const getBody = () => {
     if (loading && data.length === 0) {
-      return <p>Data is loading. Please wait.</p>
+      return <h2>Data is loading. Please wait.</h2>
     } else if (!loading && !selectedOption) {
-      return <p>Please select any option to load the data.</p>
+      return <h2>Please select any option to load the data.</h2>
     } else {
       return <Table data={data} />
     }
   }
-  
+
   return (
     <>
       <AppHeader />
